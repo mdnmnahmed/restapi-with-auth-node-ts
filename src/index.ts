@@ -1,0 +1,1 @@
+console.log("hello REST-API with Node-TS");
