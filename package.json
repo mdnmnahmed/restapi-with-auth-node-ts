@@ -1,0 +1,22 @@
+{
+  "name": "restapi-with-auth-node-ts",
+  "version": "1.0.0",
+  "description": "rest-api with authentication using node with typescript",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "rest-api",
+    "api",
+    "node-ts",
+    "auth"
+  ],
+  "author": "Num",
+  "license": "ISC",
+  "devDependencies": {
+    "ts-node": "^10.9.1",
+    "typescript": "^5.2.2"
+  }
+}
