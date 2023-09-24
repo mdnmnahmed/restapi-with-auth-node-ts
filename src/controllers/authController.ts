@@ -7,12 +7,12 @@ export const signupUser = async (req: express.Request, res: express.Response) =>
         const { email, password, username } = req.body;
 
         if (!email || !password || !username) {
-            return res.sendStatus(400);
+            return res.status(400).json({ message: "Please enter required data." });
         }
 
         const isExistingUser = await getUserByEmail(email);
         if (isExistingUser) {
-            return res.sendStatus(400);
+            return res.status(400).json({ message: "User already exists, please login with credentials." });
         }
 
         const salt = randomString();
